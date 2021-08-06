@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
 import { GitHub, ExpandMore, PlayArrow, BarChart } from '@material-ui/icons'
 import apiImage from '../web-api.svg'
-import herokuImage from '../java/heroku.svg'
+import redisImage from '../graphql/redis.svg'
 import nodejsImage from '../graphql/nodejs.svg'
 import graphqlImage from '../graphql/graphql.svg'
-import es6Image from '../graphql/es6.svg'
+import herokuImage from '../java/heroku.svg'
 import jestImage from '../graphql/jest.svg'
 import prometheusImage from '../graphql/prometheus.svg'
 import { Grid, Accordion, AccordionSummary, AccordionDetails, Button, Box, Paper } from '@material-ui/core'
@@ -75,16 +75,16 @@ function NodeJsBox(props) {
                       <img alt="Graphql" width="33vw" height="33vh" src={graphqlImage} />
                     </Grid>
                     <Grid container item xs={2} sm={2} md={2} lg={2}>
-                      <img alt="ES6" width="33vw" height="33vh" src={es6Image} />
-                    </Grid>
-                    <Grid container item xs={2} sm={2} md={2} lg={2}>
                       <img alt="Jest" width="33vw" height="33vh" src={jestImage} />
                     </Grid>
                     <Grid container item xs={2} sm={2} md={2} lg={2}>
                       <img alt="Prometheus" width="33vw" height="33vh" src={prometheusImage} />
                     </Grid>
                     <Grid container item xs={2} sm={2} md={2} lg={2}>
-                      <img alt="Heroku" width="33vw" height="33vh" src={herokuImage} />
+                      <img alt="Heroku" width="33vw" height="33vh" src={redisImage} />
+                    </Grid>
+                    <Grid container item xs={2} sm={2} md={2} lg={2}>
+                      <img alt="ES6" width="33vw" height="33vh" src={herokuImage} />
                     </Grid>
                   </Grid>
                 </Paper>
@@ -108,6 +108,10 @@ function NodeJsBox(props) {
                             <br></br>
                             {translate('node-card-tech-paragraph-3', props.lang)}
                             <br></br>
+                          </Typography>
+                        </li>
+                        <li>
+                          <Typography style={{ fontSize: '0.9em' }} component="p" variant="caption">
                             {translate('node-card-tech-paragraph-4', props.lang)}
                           </Typography>
                         </li>

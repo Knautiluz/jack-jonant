@@ -176,29 +176,25 @@ const translate = (key, language) => {
         : 'My primary skill is Java, secondary is NodeJS, so I chose NodeJS to show a little bit of it.'
     case 'node-card-tech-paragraph-2':
       return language === portuguese
-        ? 'Minha skill primária é com Java, secundária é com NodeJS, então escolhi o NodeJS para mostrar um pouquinho dela.'
-        : 'My primary skill is Java, secondary is NodeJS, so I chose NodeJS to show a little bit of it.'
-    case 'node-card-tech-paragraph-3':
-      return language === portuguese
         ? 'O GraphQL foi escolhido pois hoje atuo como back-end de api\'s para mobile, então como o graphql permite manipular as queries e seus retornos (declarative data fetching), dão um poder maior para os dev\'s de app'
         : 'GraphQL was chosen because today I work as a backend for mobile api\'s, so as graphql allows you to manipulate queries and their returns (declarative data fetching), they give greater power to app dev\'s'
-    case 'node-card-tech-paragraph-4':
+    case 'node-card-tech-paragraph-3':
       return language === portuguese
         ? 'Além disso poupa alguns dados dos usuários, pois não haverá over fetching... sem falar do cache personalizado para as queries e fácil integração com o Redis'
         : 'It also saves some user data, as there will be no over fetching... not to mention the custom cache for queries and easy integration with Redis'
-    case 'node-card-tech-paragraph-5':
-      return language === portuguese
-        ? 'Por fim o GraphQL escolhido foi o graphql-yoga, pois me dá diversas possibilidades de personalização, como middlewares, que no graphql puro seria mais complicado de fazer'
-        : 'Finally the GraphQL chosen was graphql-yoga, as it gives me several customization possibilities, such as middlewares, which in pure graphql would be more complicated to do'
-    case 'node-card-tech-paragraph-6':
+    case 'node-card-tech-paragraph-4':
       return language === portuguese
         ? 'A escolha do Jest para os testes foi uma questão de preferência, poderia ter usado o Mocha, mas prefiro o Jest'
         : 'Choosing Jest for the tests was a matter of preference, I could have used Mocha, but I prefer Jest'
-    case 'node-card-tech-paragraph-7':
+    case 'node-card-tech-paragraph-5':
       return language === portuguese
         ? 'Não poderia faltar o Prometheus, para registro de métricas. Com uma simples integração com o Grafana, é possivel configurar alarmes através de algumas métricas, além de dados serem úteis para tomada de decisão ;)'
         : 'We couldn\'t miss Prometheus, for recording metrics. With a simple integration with Grafana, it is possible to configure alarms through some metrics, besides data being useful for decision making ;)'
-    case 'node-card-tech-paragraph-8':
+    case 'node-card-tech-paragraph-6':
+      return language === portuguese
+        ? 'Escolhi o Redis para fazer o cache da aplicação. Muitas vezes quando \'empacotamos\' outras aplicações, precisamos de cachear do nosso lado (server-side-caching), assim não oneramos a aplicação empacotada.'
+        : 'I chose Redis to cache the application. Often when we \'wrapper\' other applications, we need to caching on our side (server-side-caching), so we don\'t burden the packaged application'
+    case 'node-card-tech-paragraph-7':
       return language === portuguese
         ? 'Deploy também feito com ❤️Heroku❤️'
         : 'Deploy also done with ❤️Heroku❤️'
